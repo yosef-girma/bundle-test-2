@@ -3,9 +3,11 @@
 var utils = require('/xpr/utilities');
 
 exports.process = function(context, options) {
-        PHP.XprConsole("test logging");
+      //  PHP.XprConsole("test logging");
         utils.XprConsole.log('Testing from console log');
-        return "Testing Log ";
+        utils.server_log("server log testing");
+        utils.__errlog("legacy tests");
+        return "Testing Log Updated here again ";
 }
 
 
