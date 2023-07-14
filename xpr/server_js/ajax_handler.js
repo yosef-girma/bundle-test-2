@@ -1,10 +1,11 @@
 
- require('/xpr/utilities');
+// require('/xpr/utilities');
+var utils = require('/xpr/utilities');
 
 exports.process = function(context, options) {
         PHP.XprConsole("test logging");
-        XprConsole.log('Testing from console log');
-        return "Testing ";
+        utils.XprConsole.log('Testing from console log');
+        return "Testing Log ";
 }
 
 
